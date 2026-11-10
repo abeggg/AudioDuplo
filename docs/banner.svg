@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+ <rect width="1200" height="300" rx="24" fill="#171a1f"/>
+ <path d="M65 55v14m9-23v32m9-43v54m9-43v32m9-23v14" fill="none" stroke="#abc9f8" stroke-width="4" stroke-linecap="round"/>
+ <text x="126" y="75" fill="#f2f5f7" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="600">AudioDuplo</text>
+ <text x="58" y="180" fill="#f2f5f7" font-family="Segoe UI,Arial,sans-serif" font-size="60" font-weight="600">Ouça simultaneamente</text>
+ <text x="61" y="237" fill="#a6afbc" font-family="Segoe UI,Arial,sans-serif" font-size="25">O mesmo som em dois fones.</text>
+</svg>

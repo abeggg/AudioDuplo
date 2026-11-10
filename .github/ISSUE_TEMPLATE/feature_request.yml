@@ -1,0 +1,16 @@
+name: Sugestão
+description: Proponha uma melhoria para o AudioDuplo.
+title: '[Ideia] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qual problema você quer resolver?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Como gostaria que funcionasse?
+    validations:
+      required: true

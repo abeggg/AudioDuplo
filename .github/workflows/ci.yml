@@ -1,0 +1,28 @@
+name: Windows CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build, test and package
+        shell: pwsh
+        run: ./scripts/Build.ps1 -Package
+      - name: Upload portable build
+        uses: actions/upload-artifact@v7
+        with:
+          name: AudioDuplo-windows-x64
+          path: |
+            build/AudioDuplo-*-windows-x64.zip
+            build/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14

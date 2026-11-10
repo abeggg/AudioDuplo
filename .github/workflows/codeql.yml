@@ -1,0 +1,35 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: Analyze C++
+    runs-on: windows-2022
+    permissions:
+      security-events: write
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: cpp
+      - name: Build application
+        shell: pwsh
+        run: ./scripts/Build.ps1 -Package
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v4
