@@ -18,6 +18,9 @@
   <img src="docs/preview-main.png" alt="Tela principal do AudioDuplo" width="420">
 </p>
 
+[![Windows CI](https://github.com/abeggg/AudioDuplo/actions/workflows/ci.yml/badge.svg)](https://github.com/abeggg/AudioDuplo/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/abeggg/AudioDuplo/actions/workflows/codeql.yml/badge.svg)](https://github.com/abeggg/AudioDuplo/actions/workflows/codeql.yml)
+
 ## Sobre
 
 O AudioDuplo replica o áudio que já está tocando em uma saída do Windows para uma segunda saída. O primeiro dispositivo mantém seu caminho original. O projeto explora captura e reprodução de áudio em tempo real, sincronização entre dispositivos e uma interface desktop acessível por mouse e teclado.
@@ -44,7 +47,7 @@ As prévias são renderizadas pelo mesmo código de desenho usado pela aplicaç�
 
 ## Baixar e usar
 
-Quando um lançamento estiver publicado, baixe o ZIP portátil Windows x64 na seção [Releases](../../releases), extraia-o e abra `AudioDuplo.exe`. Requer Windows 10 versão 1703 ou posterior, Windows 11 e duas saídas de áudio ativas.
+Quando um lançamento estiver publicado, baixe o ZIP portátil Windows x64 na seção [Releases](https://github.com/abeggg/AudioDuplo/releases), extraia-o e abra `AudioDuplo.exe`. Requer Windows 10 versão 1703 ou posterior, Windows 11 e duas saídas de áudio ativas.
 
 1. Em **Som do PC**, escolha a saída que o player já está usando.
 2. Em **Compartilhar com**, selecione a segunda saída.
